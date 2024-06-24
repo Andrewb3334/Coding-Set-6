@@ -10,10 +10,8 @@ def main():
     except I0Error:
         print(f"Error: Could not write to {filename}")
 
-if __name__ == "__main__":
-    main()
 def main():
-   
+    filename = "my_name.txt"
 
     try: 
 
@@ -22,7 +20,8 @@ def main():
           name = file.readline().strip()
       
       print(f"The name read from {filename} is: {name}")
-      
+    except I0Error:
+        print(f"Error: Could not write to {filename}")
 
 if __name__ == "__main__":
     main()
