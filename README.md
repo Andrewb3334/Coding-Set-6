@@ -12,3 +12,17 @@ def main():
 
 if __name__ == "__main__":
     main()
+def main():
+   
+
+    try: 
+
+      with open(filename, 'r') as file:
+
+          name = file.readline().strip()
+      
+      print(f"The name read from {filename} is: {name}")
+      
+
+if __name__ == "__main__":
+    main()
